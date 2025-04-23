@@ -3,6 +3,9 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import * as Sentry from "@sentry/react"
+import { injectSpeedInsights } from '@vercel/speed-insights';
+ 
+injectSpeedInsights();
 
 Sentry.init({
   dsn: "https://971440125dd29ffc025cd42d6fead066@o4508715570692096.ingest.us.sentry.io/4508715572264960",
